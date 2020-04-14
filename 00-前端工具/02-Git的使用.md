@@ -174,7 +174,13 @@ git cherry-pick commit1
 - [Mac 运行sh文件，也就是传说中的shell脚本](https://blog.csdn.net/yusufolu9/article/details/53706269)
 
 
+在执行`./email.sh`后，如果出现`permission denied`的错误，可以先执行`chmod 777 email.sh`，修改文件的权限。
+
 ## git客户端推荐
+
+市面上的Git客户端我基本都用过了，我最推荐的一款Git客户端是：[Tower](https://www.git-tower.com) 或者 [Fork](https://git-fork.com)。
+
+- GitUp：<https://gitup.co/>
 
 20180623时，网上看了下Git客户端的推荐排名：
 
@@ -187,7 +193,6 @@ s
 ![](http://img.smyhvae.com/20180623_1305.png)
 
 
-上面的Git客户端我基本都用过了，我最推荐的一款Git客户端是：[Tower](https://www.git-tower.com) 或者 [Fork](https://git-fork.com)。
 
 
 

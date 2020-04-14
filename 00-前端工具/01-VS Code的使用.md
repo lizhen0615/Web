@@ -1,13 +1,16 @@
 
 ## 前言
 
-> 本文最新内容将在[GitHub](https://github.com/qianguyihao/Web/blob/master/00-%E5%89%8D%E7%AB%AF%E5%B7%A5%E5%85%B7/01-VS%20Code%E7%9A%84%E4%BD%BF%E7%94%A8.md)上实时更新。
+
+> 本文的最新内容，更新于**2019-11-08**。大家完全不用担心这篇文章会过时，因为随着 VS Code 的版本更新和插件更新，本文也会随之更新。
+
+> 本文的最新内容，也会在[GitHub](https://github.com/qianguyihao/Web/blob/master/00-%E5%89%8D%E7%AB%AF%E5%B7%A5%E5%85%B7/01-VS%20Code%E7%9A%84%E4%BD%BF%E7%94%A8.md)上同步更新，欢迎 star。
 
 VS Code  本来是前端人员专用，但由于它实在是太好用了，于是，各种开发方向的码农也正在用 VS Code 作为他们的主力编程工具。甚至是一些写作的同学，也把 VS Code 作为 markdown 写作工具。
 
 写下这篇文章，是顺势而为。
 
-### VS Code 的介绍
+### 一、VS Code 的介绍
 
 VS Code 的全称是 Visual Studio Code，是一款开源的、免费的、跨平台的、高性能的、轻量级的代码编辑器。它在性能、语言支持、开源社区方面，都做的很不错。
 
@@ -43,7 +46,7 @@ VS Code 的全称是 Visual Studio Code，是一款开源的、免费的、跨�
 
 所以，如果你以后还问这个问题，那就真有些掉底了。
 
-## VS Code 的安装
+### VS Code 的安装
 
 - VS Code 官网：<https://code.visualstudio.com>
 
@@ -53,7 +56,7 @@ VS Code 的安装很简单，直接去官网下载安装包，然后双击安装
 
 上图中，直接点击 download 下载安装即可。
 
-## VS Code快捷键
+## 二、VS Code快捷键
 
 VS Code用得熟不熟，首先就看你是否会用快捷键。以下列出的内容，都是常用快捷键，而加粗部分的快捷键，使用频率则非常高。
 
@@ -76,7 +79,7 @@ VS Code用得熟不熟，首先就看你是否会用快捷键。以下列出的�
 
 - 「Cmd + 左右方向键」：在**整行**之间移动光标（很常用）。注：Win 的快捷键是「Fn + 左右方向键」
 
-- 「Cmd + Shift + \」：在**代码块**之间移动光标。
+- 「`Cmd + Shift + \`」：在**代码块**之间移动光标。
 
 ### 删除操作
 
@@ -97,6 +100,8 @@ VS Code用得熟不熟，首先就看你是否会用快捷键。以下列出的�
 | **Cmd + Enter** | Ctrl + Enter | 在当前行下面新增一行，然后跳至该行 | 即使光标不在行尾，也能快速向下插入一行 |
 | **Option + ↑** |  Alt + ↑| 将代码向上移动 | 很常用 |
 | **Option + ↓** |  Alt + ↓| 将代码向下移动 | 很常用 |
+| **Option + Shift + ↑** |  Alt + Shift + ↑| 将代码向上复制 | 很常用 |
+| **Option + Shift + ↓** |  Alt + Shift + ↓| 将代码向下复制 | 很常用 |
 
 ### JS语言相关
 
@@ -122,7 +127,7 @@ VS Code用得熟不熟，首先就看你是否会用快捷键。以下列出的�
 | Mac快捷键 | Win快捷键 | 作用 | 备注 |
 |:-------------|:-------------|:-----|:-----|
 |Cmd + F|Ctrl + F|在当前文件中搜索，光标在搜索框里||
-|Cmd + G|F3|在当前文件中搜索，光标仍在编辑器里||
+| **Cmd + G** |**F3**|在当前文件中搜索，光标仍停留在编辑器里| 很巧妙 |
 |**Cmd + Shift + F**|Ctrl + Shift +F|全局搜索|很常用|
 
 ### 多光标的使用
@@ -135,9 +140,9 @@ VS Code用得熟不熟，首先就看你是否会用快捷键。以下列出的�
 
 ### 工作区快捷键
 
-
 | Mac快捷键 | Win快捷键 | 作用 | 备注 |
 |:-------------|:-------------|:-----|:-----|
+| **cmd +/-** | **ctrl +/-** | 将工作区放大/缩小（包括代码字体、左侧导航栏） | 在投影仪场景经常用到 |
 | **Cmd + B** |  Ctrl + B | 显示/隐藏侧边栏 | 很实用 |
 |`Cmd + \`|`Ctrl + \`|创建多个编辑器|比较实用|
 | **Cmd + Option + 左右方向键** |  Ctrl + Pagedown/Pageup | 在已经打开的文件之间进行**切换** | 非常实用 |
@@ -161,94 +166,9 @@ VS Code用得熟不熟，首先就看你是否会用快捷键。以下列出的�
 
 上图中，在展开的菜单中选择「键盘快捷方式」，就可以查看和修改所有的快捷键列表了：
 
-![](http://img.smyhvae.com/20190418_1739.png)
+![](http://img.smyhvae.com/20190418_1739_2.png)
 
-
-## VS Code 的常见设置项
-
-### 面包屑（Breadcrumb）
-
-打开 VS Code 的设置项，选择「用户设置 -> 工作台 -> 导航路径」，如下图所示：
-
-![](http://img.smyhvae.com/20190415_2005.png)
-
-上图中，将红框部分打钩即可。
-
-设置成功后，我们就可以查看到当前文件的「层级结构」，非常方便。如下图所示：
-
-![](http://img.smyhvae.com/20190415_2009.png)
-
-### 是否显示代码的行号
-
-VS Code 默认显示代码的行号。你可以在设置项里搜索 `editor.lineNumbers`修改设置，配置项如下：
-
-![](http://img.smyhvae.com/20190417_2140.png)
-
-我建议保留这个设置项，无需修改。
-
-### 右侧是否显示代码的缩略图
-
-VS Code 会在代码的右侧，默认显示缩略图。你可以在设置项里搜索 `editor.minimap`进行设置，配置项如下：
-
-![](http://img.smyhvae.com/20190417_2156.png)
-
-### 将当前行代码高亮显示
-
-当我们把光标放在某一行时，这一行的背景色并没有发生变化。如果想**高亮显示**当前行的代码，你可以在设置项里搜索`editor.renderLineHighlight`进行设置。配置项如下：
-
-我设置完之后，发现效果不是很明显。有待优化。
-
-### 空格 or 制表符
-
-VS Code 会根据你所打开的文件来决定该使用空格还是制表。也就是说，如果你的项目中使用的都是制表符，那么，当你在写新的代码时，按下tab 键后，编辑器就会识别成制表符。
-
-常见的设置项如下：
-
-- **editor.detectIndentation**：自动检测（默认开启）。截图如下：
-
-![](http://img.smyhvae.com/20190417_2205.png)
-
-- **editor.insertSpaces**：按 Tab 键时插入空格（默认）。截图如下：
-
-![](http://img.smyhvae.com/20190417_2207.png)
-
-- **editor.tabSize**：一个制表符默认等于四个空格。截图如下：
-
-![](http://img.smyhvae.com/20190417_2209.png)
-
-### 改完代码后立即自动保存
-
-改完代码后，默认不会自动保存。你可以在设置项里搜索`files.autoSave`，修改配置项如下：
-
-![](http://img.smyhvae.com/20190417_2216.png)
-
-上图中，我们将配置项修改为`onFocusChange`之后，那么，当光标离开该文件后，这个文件就会自动保存了。**非常方便**。
-
-### 保存代码后，是否立即格式化
-
-保存代码后，默认**不会立即**进行代码的格式化。你可以在设置项里搜索`editor.formatOnSave`查看该配置项：
-
-![](http://img.smyhvae.com/20190417_2213.png)
-
-我觉得这个配置项保持默认就好，不用打钩。
-
-### 新建文件后的默认文件类型
-
-当我们按下快捷键「Cmd + N」新建文件时，VS Code 默认无法识别这个文件到底是什么类型的，因此也就无法识别相应的语法高亮。如果你想修改默认的文件类型，可以在设置项里搜索`files.defaultLanguage`，设置项如下：
-
-![](http://img.smyhvae.com/20190417_2221.png)
-
-上图中的红框部分，填入你期望的默认文件类型。我填的是`html`类型，你也可以填写成 `javascript` 或者 `markdown`，或者其他的语言类型。
-
-### 删除文件时，是否弹出确认框
-
-当我们在 VS Code 中删除文件时，默认会弹出确认框。如果你想修改设置，可以在设置项里搜索`xplorer.confirmDelete`。截图如下：
-
-![](http://img.smyhvae.com/20190418_1758.png)
-
-我建议这个设置项保持默认的打钩就好，不用修改。删除文件前的弹窗提示，也是为了安全考虑，万一手贱不小心删了呢？
-
-## 命令面板的使用
+## 四、命令面板的使用
 
 Mac用户按住快捷键 `Cmd+Shift+P` （Windows用户按住快捷键`Ctrl+Shift+P`），可以打开命令面板。效果如下：
 
@@ -274,9 +194,132 @@ Mac用户按住快捷键 `Cmd+Shift+P` （Windows用户按住快捷键`Ctrl+Shif
 
 ![](http://img.smyhvae.com/20190414_1751.png)
 
-## VS Code 的常用技巧
+### 使用命令行启动 VS Code
 
-### 文件对比
+（1）输入快捷键「Cmd + Shift + P 」，选择`install code command`：
+
+![](http://img.smyhvae.com/20191103_1327.png)
+
+（2）使用命令行：
+
+- `code`命令：启动 VS Code 软件
+
+- `code pathName/fileName`命令：通过 VS Code 软件打开指定目录/指定文件。
+
+## 五、VS Code 的常见设置项
+
+### 1、VS Code 设置为中文语言
+
+Mac用户按住快捷键 `Cmd+Shift+P` （Windows用户按住快捷键`Ctrl+Shift+P`），打开命令面板。
+
+在命令面板中，输入`Configure Display Language`，选择`Install additional languages`，然后安装插件`Chinese (Simplified) Language Pack for Visual Studio Code`即可。
+
+或者，我们可以直接安装插件`Chinese (Simplified) Language Pack for Visual Studio Code`，是一样的。
+
+安装完成后，重启VS Code。
+
+### 2、面包屑（Breadcrumb）
+
+打开 VS Code 的设置项，选择「用户设置 -> 工作台 -> 导航路径」，如下图所示：
+
+![](http://img.smyhvae.com/20191108_1550.png)
+
+上图中，将红框部分打钩即可。
+
+设置成功后，我们就可以查看到当前文件的「层级结构」，非常方便。如下图所示：
+
+![](http://img.smyhvae.com/20190415_2009.png)
+
+### 3、是否显示代码的行号
+
+VS Code 默认显示代码的行号。你可以在设置项里搜索 `editor.lineNumbers`修改设置，配置项如下：
+
+![](http://img.smyhvae.com/20190417_2140.png)
+
+我建议保留这个设置项，无需修改。
+
+### 4、右侧是否显示代码的缩略图
+
+VS Code 会在代码的右侧，默认显示缩略图。你可以在设置项里搜索 `editor.minimap`进行设置，配置项如下：
+
+![](http://img.smyhvae.com/20190417_2156.png)
+
+### 6、将当前行代码高亮显示（更改光标所在行的背景色）
+
+当我们把光标放在某一行时，这一行的背景色并没有发生变化。如果想**高亮显示**当前行的代码，需要设置两步：
+
+（1）在设置项里搜索`editor.renderLineHighlight`，将选项值设置为`all`或者`line`。
+
+（2）在设置项里增加如下内容：
+
+```json
+    "workbench.colorCustomizations": {
+        "editor.lineHighlightBackground": "#00000090",
+        "editor.lineHighlightBorder": "#00000000"
+    }
+```
+
+上面两行代码的意思是，修改光标所在行的背景色（背景色设置为全黑，透明度90%），修改光标所在行的边框色。
+
+### 7、改完代码后立即自动保存
+
+**方式一**：
+
+改完代码后，默认不会自动保存。你可以在设置项里搜索`files.autoSave`，修改配置项如下：
+
+![](http://img.smyhvae.com/20190417_2216.png)
+
+上图中，我们将配置项修改为`onFocusChange`之后，那么，当光标离开该文件后，这个文件就会自动保存了。**非常方便**。
+
+**方式二**：
+
+当然，你也可以直接在菜单栏选择「文件-自动保存」。勾选年后，当你写完代码后，文件会立即实时保存。
+
+### 8、保存代码后，是否立即格式化
+
+保存代码后，默认**不会立即**进行代码的格式化。你可以在设置项里搜索`editor.formatOnSave`查看该配置项：
+
+![](http://img.smyhvae.com/20190417_2213.png)
+
+我觉得这个配置项保持默认就好，不用打钩。
+
+### 9、空格 or 制表符
+
+VS Code 会根据你所打开的文件来决定该使用空格还是制表。也就是说，如果你的项目中使用的都是制表符，那么，当你在写新的代码时，按下tab 键后，编辑器就会识别成制表符。
+
+常见的设置项如下：
+
+- **editor.detectIndentation**：自动检测（默认开启）。截图如下：
+
+![](http://img.smyhvae.com/20190417_2205.png)
+
+- **editor.insertSpaces**：按 Tab 键时插入空格（默认）。截图如下：
+
+![](http://img.smyhvae.com/20190417_2207.png)
+
+- **editor.tabSize**：一个制表符默认等于四个空格。截图如下：
+
+![](http://img.smyhvae.com/20190417_2209.png)
+
+### 10、新建文件后的默认文件类型
+
+当我们按下快捷键「Cmd + N」新建文件时，VS Code 默认无法识别这个文件到底是什么类型的，因此也就无法识别相应的语法高亮。如果你想修改默认的文件类型，可以在设置项里搜索`files.defaultLanguage`，设置项如下：
+
+![](http://img.smyhvae.com/20190417_2221.png)
+
+上图中的红框部分，填入你期望的默认文件类型。我填的是`html`类型，你也可以填写成 `javascript` 或者 `markdown`，或者其他的语言类型。
+
+### 11、删除文件时，是否弹出确认框
+
+当我们在 VS Code 中删除文件时，默认会弹出确认框。如果你想修改设置，可以在设置项里搜索`xplorer.confirmDelete`。截图如下：
+
+![](http://img.smyhvae.com/20190418_1758.png)
+
+我建议这个设置项保持默认的打钩就好，不用修改。删除文件前的弹窗提示，也是为了安全考虑，万一手贱不小心删了呢？
+
+## 六、VS Code 设置-高级进阶
+
+### 1、文件对比
 
 VS Code 默认支持**对比两个文件的内容**。选中两个文件，然后右键选择「将已选项进行比较」即可，效果如下：
 
@@ -286,13 +329,13 @@ VS Code自带的对比功能并不够强大，我们可以安装插件`compareit
 
 ![](http://img.smyhvae.com/20190329_1757.png)
 
-### 查找某个函数在哪些地方被调用了
+### 2、查找某个函数在哪些地方被调用了
 
 比如我已经在`a.js`文件里调用了 `foo()`函数。那么，如果我想知道`foo()`函数在其他文件中是否也被调用了，该怎么做呢？
 
 做法如下：在 `a.js` 文件里，选中`foo()`函数（或者将光标放置在`foo()`函数上），然后按住快捷键「Shift + F12」，就能看到 `foo()`函数在哪些地方被调用了，比较实用。
 
-### 鼠标操作
+### 3、鼠标操作
 
 - 在当前行的位置，鼠标三击，可以选中当前行。
 
@@ -300,7 +343,7 @@ VS Code自带的对比功能并不够强大，我们可以安装插件`compareit
 
 - 在某个**行号**的位置，**上下移动鼠标，可以选中多行**。
 
-### 重构
+### 4、重构
 
 重构分很多种，我们来举几个例子。
 
@@ -312,15 +355,15 @@ VS Code自带的对比功能并不够强大，我们可以安装插件`compareit
 
 选中某一段代码，这个时候，代码的左侧会出现一个「灯泡图标」，点击这个图标，就可以把这段代码提取为一个单独的函数。
 
-### 在当前文件中搜索
+### 5、在当前文件中搜索
 
 在上面的快捷键列表中，我们已经知道如下快捷键：
 
 - Cmd + F（Win用户是Ctrl + F）：在当前文件中搜索，光标在搜索框里
 
-- Cmd + G（Win用户是 F3）：在当前文件中搜索，光标仍在编辑器里
+- Cmd + G（Win用户是 F3）：在当前文件中搜索，光标仍停留在编辑器里
 
-但是，你可能会注意到，搜索框里有很多按钮，每个按钮都对应着不同的功能，如下图所示：
+另外，你可能会注意到，搜索框里有很多按钮，每个按钮都对应着不同的功能，如下图所示：
 
 ![](http://img.smyhvae.com/20190415_2052.png)
 
@@ -328,11 +371,9 @@ VS Code自带的对比功能并不够强大，我们可以安装插件`compareit
 
 「在选定内容中查找」这个功能还是比较实用的。你也可以在设置项里搜索 `editor.find.autoFindInSelection`，勾选该设置项后，那么，当你选中指定内容后，然后按住「Cmd + F」，就可以**自动**只在这些内容里进行查找。该设置项如下图所示：
 
-![](http://img.smyhvae.com/20190415_2116.png)
+![](http://img.smyhvae.com/20191108_1655.png)
 
-正常情况下，我建议这个设置项不用勾选。
-
-### 全局搜索
+### 6、全局搜索
 
 在上面的快捷键列表中，我们已经知道如下快捷键：
 
@@ -342,7 +383,7 @@ VS Code自带的对比功能并不够强大，我们可以安装插件`compareit
 
 上图中，你可以点击红框部分，展开更多的配置项。
 
-### Git版本管理
+### 7、Git版本管理
 
 VS Code 自带了 Git 版本管理，如下图所示：
 
@@ -353,7 +394,7 @@ VS Code 自带了 Git 版本管理，如下图所示：
 
 与此同时，我建议安装插件`GitLens`，它是 VS Code 中我最推荐的一个插件，简直是Git神器，码农必备。
 
-### 将工作区放大/缩小
+### 8、将工作区放大/缩小
 
 我们在上面的设置项里修改字体大小后，仅仅只是修改了代码的字体大小。
 
@@ -363,7 +404,7 @@ VS Code 自带了 Git 版本管理，如下图所示：
 
 如果你想恢复默认的工作区大小，可以在命令面板输入`重置缩放`（英文是`reset zoom`）
 
-### 创建多层子文件夹
+### 9、创建多层子文件夹
 
 我们可以在新建文件夹的时候，如果直接输入`aa/bb/cc`，比如：
 
@@ -374,8 +415,7 @@ VS Code 自带了 Git 版本管理，如下图所示：
 
 ![](http://img.smyhvae.com/20190418_2023.png)
 
-
-### .vscode 文件夹的作用
+### 10、.vscode 文件夹的作用
 
 如果你发现项目的根目录下有一个`.vscode`文件夹，说明这个文件夹代表的是当前项目的配置。
 
@@ -385,20 +425,19 @@ VS Code 自带了 Git 版本管理，如下图所示：
 
 - `sftp.json`：ftp文件传输的配置。
 
-### 自带终端
+### 11、自带终端
 
 我们可以按下「Ctrl + `」打开 VS Code 自带的终端。我认为内置终端并没有那么好用，我更建议你使用第三方的终端 **item2**。
 
-### markdown语法支持
+### 12、markdown语法支持
 
 VS Code自带 markdown 语法高亮，写完 md 文件之后，你可以点击右上角的按钮进行预览，如下图所示：
 
 ![](http://img.smyhvae.com/20190418_1907.png)
 
-
 你也可以在控制面板输入`Markdown: 打开预览`，直接全屏预览 markdown文件。
 
-### Emmet in VS Code
+### 13、Emmet in VS Code
 
 `Emmet`可以极大的提高 html 和 css 的编写效率，它提供了一种非常简练的语法规则。
 
@@ -417,78 +456,47 @@ VS Code自带 markdown 语法高亮，写完 md 文件之后，你可以点击�
 
 VS Code 默认支持 Emmet。更多 Emmet 语法规则，请自行查阅。
 
-## 插件扩展 / 插件推荐
+## 七、VS Code 插件推荐
 
 VS Code 有一个很强大的功能就是支持插件扩展。
 
-
-![](http://img.smyhvae.com/20190418_1932.png)
-
+![](http://img.smyhvae.com/20191108_1553_2.png)
 
 上图中，点击红框部分，即可在输入框里，查找你想要的插件名，然后进行安装。
 
 我来列举几个常见的插件，这些插件都很实用。
 
-### GitLens
+### GitLens 【荐】
 
 我强烈建议你安装插件`GitLens`，它是 VS Code 中我最推荐的一个插件，简直是Git神器，码农必备。如果你不知道，那真是out了。
 
 GitLens 在 Git 管理上有很多强大的功能，比如：
 
+- 将光标放置在代码的当前行，可以看到这样代码的提交者是谁，以及提交时间。这一点，是 GitLens 最便捷的功能。
+
 - 查看某个 commit 的代码改动记录
 
 - 查看不同的分支
 
-- 可以将两个 commit 进行代码对比，甚至可以将两个 branch 分支进行代码比对。这一点，简直是 GitLens 最强大的功能。
+- 可以将两个 commit 进行代码对比
 
-### RemoteHub
-
-不要惊讶，RemoteHub 和 GitLens 是同一个作者开发出来的。
-
-`RemoteHub`插件的作用是：可以在本地查看 GitHub 网站上的代码，而不需要将代码下载到本地。
-
-![](http://img.smyhvae.com/20190418_1937.png)
-
-这个插件目前使用的人还不多，赶紧安装起来尝尝鲜吧。
-
-### TODO Highlight
-
-写代码过程中，突然发现一个Bug，但是又不想停下来手中的活，以免打断思路，怎么办？按照代码规范，我们一般是在代码中加个TODO注释。比如：（注意，一定要写成大写`TODO`，而不是小写的`todo`）
-
-```
-//TODO:这里有个bug，我一会儿再收拾你
-```
-
-或者：
-
-```
-//FIXME:我也不知道为啥， but it works only that way.
-```
-
-安装了插件 `TODO Highlight`之后，按住「Cmd + Shift + P」打开命令面板，输入「Todohighlist」，选择相关的命令，我们就可以看到一个 todoList 的清单。
-
+- 甚至可以将两个 branch 分支进行整体的代码对比。这一点，简直是 GitLens 最强大的功能。当我们在不同分支review代码的时候，就可以用到这一招。
 
 ### Bracket Pair Colorizer 2：突出显示成对的括号【荐】
 
-`Bracket Pair Colorizer 2`插件：以不同颜色显示括号并用连线标注括号范围。
+`Bracket Pair Colorizer 2`插件：以不同颜色显示成对的括号，并用连线标注括号范围。
 
-### Rainbow Brackets：
-
-`Rainbow Brackets`插件：突出显示成对的括号。
-
-### indent-rainbow：突出显示缩进
-
-`indent-rainbow`插件：突出显示缩进。
-
-安装完成后，效果如下图所示：
-
-![](http://img.smyhvae.com/20190418_1958.png)
+另外，还有个`Rainbow Brackets`插件，也可以突出显示成对的括号。
 
 ### sftp：文件传输
 
 如果你需要将本地文件通过 ftp 的形式上传到局域网的服务器，可以安装`sftp`这个插件，很好用。在公司会经常用到。
 
-安装完成后，输入快捷键「cmd+shift+P」弹出命令面板，然后输入`sftp:config`，回车，当前工程的`.vscode`文件夹下就会自动生成一个`sftp.json`文件，我们需要在这个文件里配置的内容可以是：
+步骤如下：
+
+（1）安装插件`sftp`。
+
+（2）配置 `sftp.json`文件。 插件安装完成后，输入快捷键「cmd+shift+P」弹出命令面板，然后输入`sftp:config`，回车，当前工程的`.vscode`文件夹下就会自动生成一个`sftp.json`文件，我们需要在这个文件里配置的内容可以是：
 
 - `host`：服务器的IP地址
 
@@ -504,7 +512,7 @@ GitLens 在 Git 管理上有很多强大的功能，比如：
 
 ```json
 {
-    "host": "",     //服务器ip
+    "host": "192.168.xxx.xxx",     //服务器ip
     "port": 22,     //端口，sftp模式是22
     "username": "", //用户名
     "password": "", //密码
@@ -532,10 +540,103 @@ GitLens 在 Git 管理上有很多强大的功能，比如：
 }
 ```
 
+（3）在 VS Code的当前文件里，选择「右键 -> upload」，就可以将本地的代码上传到 指定的 ftp 服务器上（也就是在上方 `host` 中配置的服务器ip）。
 
-### 颜色主题推荐： SynthWave '84
+我们还可以选择「右键 -> Diff with Remote」，就可以将本地的代码和 ftp 服务器上的代码做对比。
 
-`SynthWave '84` 这个主题很酷。
+### Project Manager
+
+工作中，我们经常会来回切换多个项目，每次都要找到对应项目的目录再打开，比较麻烦。Project Manager插件可以解决这样的烦恼，它提供了专门的视图来展示你的项目，我们可以把常用的项目保存在这里，需要时一键切换，十分方便。
+
+### open in browser
+
+安装`open in browser`插件后，在 HTML 文件中「右键选择 --> Open in Default Browser」，即可在浏览器中预览网页。
+
+
+
+### highlight-icemode：选中相同的代码时，让高亮显示更加明显【荐】
+
+VSCode自带的高亮显示，实在是不够显眼。用插件支持一下吧。
+
+所用了这个插件之后，VS Code自带的高亮就可以关掉了：
+
+在用户设置里添加`"editor.selectionHighlight": false`即可。
+
+参考链接：[vscode 选中后相同内容高亮插件推荐](https://blog.csdn.net/palmer_kai/article/details/79548164)
+
+### Color Manager
+
+css 颜色管理。
+
+### TODO Highlight
+
+写代码过程中，突然发现一个Bug，但是又不想停下来手中的活，以免打断思路，怎么办？按照代码规范，我们一般是在代码中加个TODO注释。比如：（注意，一定要写成大写`TODO`，而不是小写的`todo`）
+
+```
+//TODO:这里有个bug，我一会儿再收拾你
+```
+
+或者：
+
+```
+//FIXME:我也不知道为啥， but it works only that way.
+```
+
+安装了插件 `TODO Highlight`之后，按住「Cmd + Shift + P」打开命令面板，输入「Todohighlist」，选择相关的命令，我们就可以看到一个 todoList 的清单。
+
+
+### WakaTime 【荐】
+
+统计写代码的时间。
+
+
+### Code Time
+
+`Code Time`插件：记录编程时间，统计代码行数。
+
+安装该插件后，VS Code 底部的状态栏右下角可以看到时间统计。点击那个位置之后，选择「Code Time Dashboard」，即可查看统计结果。
+
+备注：团长试了一下这个 code time 插件，发现统计结果不是很准。
+
+
+### Markdown Preview Github Styling 【荐】
+
+以 GitHub 风格预览 Markdown 样式。
+
+### Markdown Preview Enhanced
+
+预览 Markdown 样式。
+
+
+### Settings Sync
+
+- 地址：<https://github.com/shanalikhan/code-settings-sync>
+
+- 作用：多台设备之间，同步 VS Code 配置。通过登录 GitHub 账号来使用这个同步工具。
+
+### vscode-syncing
+
+- 地址：<https://github.com/nonoroazoro/vscode-syncing>
+
+- 作用：多台设备之间，同步 VS Code 配置。
+
+### indent-rainbow：突出显示缩进
+
+`indent-rainbow`插件：突出显示缩进。
+
+安装完成后，效果如下图所示：
+
+![](http://img.smyhvae.com/20190418_1958.png)
+
+### RemoteHub
+
+不要惊讶，RemoteHub 和 GitLens 是同一个作者开发出来的。
+
+`RemoteHub`插件的作用是：可以在本地查看 GitHub 网站上的代码，而不需要将代码下载到本地。
+
+![](http://img.smyhvae.com/20190418_1937.png)
+
+这个插件目前使用的人还不多，赶紧安装起来尝尝鲜吧。
 
 ### Live Share：实时编码分享
 
@@ -551,29 +652,39 @@ GitLens 在 Git 管理上有很多强大的功能，比如：
 
 ![](http://img.smyhvae.com/20190418_2005.png)
 
-### Settings Sync
-
-- 地址：<https://github.com/shanalikhan/code-settings-sync>
-
-- 作用：多台设备之间，同步 VS Code 配置。
-
 ### vscode-pigments
 
 css颜色高亮显示。
 
-### vscode-syncing
+## 八、主题插件
 
-- 地址：<https://github.com/nonoroazoro/vscode-syncing>
+- [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
 
-- 作用：多台设备之间，同步 VS Code 配置。
+- [Snazzy Plus](https://marketplace.visualstudio.com/items?itemName=akarlsten.vscode-snazzy-akarlsten)
 
-## 参考链接
+- [Dainty](https://marketplace.visualstudio.com/items?itemName=alexanderte.dainty-vscode)
 
-- [https://segmentfault.com/a/1190000012811886](https://segmentfault.com/a/1190000012811886)
+- `SynthWave '84`
+
 
 ## 最后一段
 
 如果你有什么推荐的 VS Code 插件，欢迎留言。
 
 同时，你也可以关注我在 GitHub 上的 [前端入门项目](https://github.com/qianguyihao/Web)，超级详细和真诚。
+
+## 参考链接
+
+- [VS Code 折腾记 - (16) 推荐一波实用的插件集](https://juejin.im/post/5d74eb5c51882525017787d9)
+
+- [VSCode前端必备插件，有可能你装了却不知道如何使用？](https://juejin.im/post/5db66672f265da4d0e009aad)
+
+- [能让你开发效率翻倍的 VSCode 插件配置（上）](https://juejin.im/post/5a08d1d6f265da430f31950e)
+
+- [https://segmentfault.com/a/1190000012811886](https://segmentfault.com/a/1190000012811886)
+
+- [「Vscode」打造类sublime的高颜值编辑器](https://idoubi.cc/2019/07/08/vscode-sublime-theme/)
+
+
+
 
